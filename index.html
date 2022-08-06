@@ -42,13 +42,13 @@
             $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
         }
         function getMessages(){
-            $.get('http://localhost:3000/messages', (data) =>{
+            $.get('https://arjunkhatipatel.github.io/chatbox/messages', (data) =>{
                 data.forEach(addMessages);
             })
         }
 
         function postMessages(message){
-            $.post('http://localhost:3000/messages', message)
+            $.post('https://arjunkhatipatel.github.io/chatbox//messages', message)
         }
     </script>
 </body>
